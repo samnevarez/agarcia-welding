@@ -99,66 +99,80 @@
     <div class="row">
       <div class="col-lg-12 mx-auto">
         <h2 class="ecmy-8">Our Gallery</h2>
-        <div id="gallery" class="portfolioFilter clearfix">
-          <a href="#" data-filter="*" class="current">All Categories</a>
-          <a href="#" data-filter=".webTemplates">Web Templates</a>
-          <a href="#" data-filter=".logos">Logos</a>
-          <a href="#" data-filter=".drawings">Drawings</a>
-          <a href="#" data-filter=".ui">UI Elements</a>
-        </div>
+        <section class="main text-center">
+          <div class="container">
+            <ul class="list-unstyled row">
+              <li class="col-md active" data-class="all">ALL</li>
+              <li class="col-md" data-class="design">WEB DESIGN</li>
+              <li class="col-md" data-class="development">WEB DEVELOPMENT</li>
+              <li class="col-md" data-class="graphic">GRAPHIC DESIGN</li>
+              <li class="col-md" data-class="seo">SEARCH ENGINE</li>
+              <li class="col-md" data-class="ui">UI / UX</li>
+            </ul>
           </div>
-        <div class="portfolioContainer">
-    
-          <div class="webTemplates objects">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/cc99b535336825.Y3JvcCwxMzk1LDEwOTEsMCw3ODA.png" alt="image">
+          <div class="container-fluid ">
+            <div class="col-md-3 images" data-class="ui">
+              <img src="https://picsum.photos/300/200?random=1" alt="">
+            </div>
+            <div class="col-md-3 images" data-class="development">
+              <img src="https://picsum.photos/300/200?random=2" alt="">
+            </div>
+            <div class="col-md-3 images" data-class="ui">
+              <img src="https://picsum.photos/300/200?random=3" alt="">
+            </div>
+            <div class="col-md-3 images" data-class="design">
+              <img src="https://picsum.photos/300/200?random=4" alt="">
+            </div>
+            <div class="col-md-3 images" data-class="development">
+              <img src="https://picsum.photos/300/200?random=5" alt="">
+            </div>
+            <div class="col-md-3 images" data-class="design">
+              <img src="https://picsum.photos/300/200?random=6" alt="">
+            </div>
+            <div class="col-md-3 images" data-class="graphic">
+              <img src="https://picsum.photos/300/200?random=7" alt="">
+            </div>
+            <div class="col-md-3 images" data-class="seo">
+              <img src="https://picsum.photos/300/200?random=8" alt="">
+            </div>
           </div>
-    
-          <div class="drawings places">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/d4cfa934191261.Y3JvcCw2MTMsNDc5LDQsMjA0.jpg" alt="image">
-          </div>
-    
-          <div class="webTemplates food">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/11893193.5482088f6f391.png" alt="image">
-          </div>
-    
-          <div class="logos drawings">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/be4b9728308865.55b92edb950fc.jpg" alt="image">
-          </div>
-    
-          <div class="webTemplates">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/12963199.548365055868a.png" alt="image">
-          </div>
-    
-          <div class="ui">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/20342607.5434c04b49254.png" alt="image">
-          </div>
-    
-          <div class="drawings">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/b11bbb26474383.555f91fd42584.jpg" alt="image">
-          </div>
-    
-          <div class="webTemplates">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/14385875.548573dae7a09.jpg" alt="image">
-          </div>
-    
-          <div class="drawings">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/14569777.5485b3876a1b9.png" alt="image">
-          </div>
-          <div class="logos">
-            <img src=" https://mir-s3-cdn-cf.behance.net/projects/202/1d854a24500155.5505cccd057a4.jpg" alt="image">
-          </div>
-          <div class="ui">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/f9b95b26406487.555cc1fded76f.jpg" alt="image">
-          </div>
-          
-          <div class="logos">
-            <img src="https://mir-s3-cdn-cf.behance.net/projects/202/181a7b35469661.Y3JvcCw3NjUsNTk5LDY3LDA.png" alt="image">
-          </div>
-        </p>
+        </section>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  /** code by webdevtrick ( https://webdevtrick.com ) **/
+const listItems = document.querySelectorAll('.main li');
+const allimages = document.querySelectorAll('.main .container-fluid .images');
+
+
+function toggleActiveClass(active){
+    listItems.forEach(item => {
+      item.classList.remove('active');
+    })
+    active.classList.add('active');
+}
+
+function toggleimages(dataClass){
+    if(dataClass === 'all'){
+        for(let i = 0; i<allimages.length; i++){
+            allimages[i].style.display = 'block';
+        }
+    } else {
+        for(let i = 0; i<allimages.length; i++)
+            allimages[i].dataset.class === dataClass ? allimages[i].style.display = 'block' : allimages[i].style.display = 'none';
+    }
+}
+
+for(let i = 0; i < listItems.length; i++){
+    listItems[i].addEventListener('click', function(){
+        toggleActiveClass(listItems[i]);
+        toggleimages(listItems[i].dataset.class);
+    });
+}
+</script>
 
   <!-- Projects Section -->
   <section id="services" class="ecmy-16 projects-section">
