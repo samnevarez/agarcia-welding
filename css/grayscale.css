@@ -4,13 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
-/* $secondary #8080ff */
 /* mobile style */
 #mainNav {
   min-height: 56px;
-  background-color: black;
+  background-color: #0e0e0e;
   border-radius: 0;
-  border-bottom: 1px solid #330c00;
+  border-bottom: 1px solid #414141;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -24,7 +23,7 @@
 
 #mainNav .navbar-toggler {
   padding: 0;
-  color: #ff501a;
+  color: #b4b4b4;
   border: none;
   border-radius: 0;
 }
@@ -34,7 +33,7 @@
 }
 
 #mainNav .navbar-toggler:focus:hover {
-  color: #ff501a;
+  color: #b4b4b4;
   border: none;
 }
 
@@ -52,11 +51,11 @@
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #ff501a;
+  color: #b4b4b4;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #ff501a;
+  color: #b4b4b4;
 }
 
 .masthead {
@@ -104,7 +103,7 @@
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #e63600;
+  background-color: #ff0404;
   box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -115,7 +114,7 @@
 
 .btn-primary:focus {
   color: #fff;
-  background-color: #e63600;
+  background-color: #ff0404;
   box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
   outline: none;
   text-decoration: none;
@@ -123,7 +122,7 @@
 
 .btn-primary:active {
   color: #fff;
-  background-color: #4d1200 !important;
+  background-color: #6a0000 !important;
   box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
@@ -139,20 +138,20 @@
 }
 
 .btn-prm-bg {
-  background: #992400;
+  background: #b60000;
 }
 
 .btn-scn-bg {
-  background: #ff501a;
+  background: #5653ff;
 }
 
 a {
-  color: #ff501a;
+  color: #b4b4b4;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff9e80;
+  color: #e7e7e7;
   text-decoration: underline;
 }
 
@@ -171,7 +170,7 @@ a:hover {
 @media (min-width: 320px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #1a0600;
+    border-left: 0.5rem solid #343434;
   }
 }
 
@@ -185,7 +184,7 @@ a:hover {
     padding: 2rem;
   }
   .projects-section .project-text hr {
-    border-color: #992400;
+    border-color: #747474;
     border-width: .25rem;
     width: 30%;
   }
@@ -197,7 +196,7 @@ a:hover {
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #992400;
+  border-bottom: 0.25rem solid #747474;
 }
 
 .contact-section .card h4 {
@@ -208,7 +207,7 @@ a:hover {
 }
 
 .contact-section .card hr {
-  border-color: #992400;
+  border-color: #747474;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -6018,6 +6017,65 @@ a:hover {
   }
 }
 
+#gallery .portfolioFilter {
+  padding: 15px 0;
+}
+
+#gallery .portfolioFilter a {
+  margin-right: 6px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+#gallery .portfolioFilter a.current {
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  color: #f9f9f9;
+}
+
+#gallery .portfolioContainer {
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+#gallery img {
+  margin: 5px;
+  max-width: 100%;
+}
+
+#gallery .isotope-item {
+  z-index: 2;
+}
+
+#gallery .isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+#gallery .isotope,
+#gallery .isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+#gallery .isotope {
+  -webkit-transition-property: height, width;
+  transition-property: height, width;
+}
+
+#gallery .isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
 /* * {
   margin: 0;
   padding: 0;
@@ -6025,7 +6083,7 @@ a:hover {
   box-sizing: border-box;
 } */
 body {
-  background-color: black;
+  background-color: #010101;
 }
 
 body p {
@@ -6116,8 +6174,8 @@ h1 {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: black;
-    border-bottom: 1px solid #330c00;
+    background-color: #010101;
+    border-bottom: 1px solid #414141;
     -webkit-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
@@ -6127,7 +6185,7 @@ h1 {
     color: #cccccc;
   }
   #mainNav .navbar-brand:hover {
-    color: #ff501a;
+    color: #b4b4b4;
   }
   #mainNav .nav-link {
     -webkit-transition: none;
@@ -6139,19 +6197,19 @@ h1 {
     transition: .5s;
   }
   #mainNav .nav-link:hover {
-    color: #ff501a;
+    color: #b4b4b4;
   }
   #mainNav .nav-link:active {
-    color: #ff501a;
+    color: #b4b4b4;
   }
   #mainNav.navbar-shrink {
-    background-color: black;
+    background-color: #0e0e0e;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #cccccc;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #ff501a;
+    color: #b4b4b4;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #cccccc;
@@ -6159,20 +6217,20 @@ h1 {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #ff501a;
+    color: #b4b4b4;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #ff501a;
+    color: #b4b4b4;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #ff501a;
+    color: #b4b4b4;
     outline: none;
-    border-bottom: 0.25rem solid #ff501a;
+    border-bottom: 0.25rem solid #b4b4b4;
   }
 }
 
 .bg-black {
-  background-color: black !important;
+  background-color: #0e0e0e !important;
 }
 
 .bg-dark {
@@ -6180,11 +6238,11 @@ h1 {
 }
 
 .bg-primary {
-  background-color: #992400 !important;
+  background-color: #747474 !important;
 }
 
 .text-primary {
-  color: #992400 !important;
+  color: #747474 !important;
 }
 
 footer {
@@ -6197,7 +6255,7 @@ footer {
 }
 
 .ecborder {
-  border: 1px solid #1a0600;
+  border: 1px solid #343434;
 }
 
 @media (max-width: 992px) {
@@ -6217,12 +6275,12 @@ footer {
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #1a0600;
+  border-bottom: 0.25rem solid #343434;
 }
 
 .contact-section .card hr {
   border: 0;
-  border-bottom: 0.25rem solid #1a0600;
+  border-bottom: 0.25rem solid #343434;
 }
 
 .rotate-90-deg {

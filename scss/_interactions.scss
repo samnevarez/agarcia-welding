@@ -15,7 +15,7 @@
   border: 0;
   &:hover {
     color: $white;
-    background-color: lighten($primary, 15%);
+    background-color: lighten($btn-prm, 15%);
     box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
     transform: translateY(-2px);
     transition-duration: .5s;
@@ -23,14 +23,14 @@
   }
   &:focus {
     color: $white;
-    background-color: lighten($primary, 15%);
+    background-color: lighten($btn-prm, 15%);
     box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
     outline: none;
     text-decoration: none;
   }
   &:active {
     color: $white;
-    background-color: darken($primary, 15%) !important;
+    background-color: darken($btn-prm, 15%) !important;
     box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
     transform: translateY(1px);
     transition-duration: .1s;
@@ -44,12 +44,13 @@
 }
 
 .btn-prm-bg {
-  background: $primary; 
+  background: $btn-prm; 
 }
 
 .btn-scn-bg {
-  background: $secondary;
+  background: $btn-scn;
 }
+
 // Link Styles
 
 a {
