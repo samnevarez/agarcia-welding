@@ -3159,6 +3159,60 @@ a:hover {
   }
 }
 
+/** code by webdevtrick ( https://webdevtrick.com ) **/
+.gallery .ul {
+  margin-top: 50px;
+}
+
+.gallery .ul li {
+  padding: 10px 15px;
+  border: 2px solid #333;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .5s ease;
+  color: #333;
+}
+
+.gallery .ul li.active,
+.gallery .ul li:hover {
+  background-color: #ec1c23;
+  color: #FFF;
+  border: 2px solid #ec1c23;
+}
+
+.gallery .ul li:last-of-type {
+  margin-right: 0;
+}
+
+.gallery .ul li:nth-of-type(3),
+.gallery .ul li:nth-of-type(4),
+.gallery .ul li:nth-of-type(5) {
+  flex-grow: 2;
+}
+
+.gallery .container-fluid {
+  overflow: hidden;
+  padding: 0;
+}
+
+.gallery .container-fluid .col-md-3 {
+  padding: 0;
+  float: left;
+  transition: all 5s ease-in-out;
+}
+
+.gallery .container-fluid img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .gallery .container-fluid img {
+    margin-bottom: 15px;
+  }
+}
+
 /* -- MOBILE -- El Castillo Design System --*/
 @media screen and (max-width: 992px) {
   .ecmy-0 {
@@ -5548,65 +5602,13 @@ a:hover {
   }
 }
 
-#gallery .portfolioFilter {
-  padding: 15px 0;
-}
-
-#gallery .portfolioFilter a {
-  margin-right: 6px;
-  color: #666;
-  text-decoration: none;
-  border: 1px solid #ccc;
-  padding: 4px 15px;
-  border-radius: 50px;
-  display: inline-block;
-}
-
-#gallery .portfolioFilter a.current {
-  background: #1e1e1e;
-  border: 1px solid #1e1e1e;
-  color: #f9f9f9;
-}
-
-#gallery .portfolioContainer {
-  border: 1px solid #eee;
-  border-radius: 3px;
-}
-
-#gallery img {
-  margin: 5px;
-  max-width: 100%;
-}
-
-#gallery .isotope-item {
-  z-index: 2;
-}
-
-#gallery .isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-#gallery .isotope,
-#gallery .isotope .isotope-item {
-  /* change duration value to whatever you like */
-  transition-duration: 0.3s;
-}
-
-#gallery .isotope {
-  transition-property: height, width;
-}
-
-#gallery .isotope .isotope-item {
-  transition-property: transform, opacity;
-}
-
-/* * {
+* {
   margin: 0;
   padding: 0;
   border: solid red .25px;
   box-sizing: border-box;
-} */
+}
+
 body {
   background-color: #010101;
 }
@@ -5813,78 +5815,5 @@ footer {
 @media (max-width: 992px) {
   .rotate-180-deg {
     transform: rotate(0deg);
-  }
-}
-
-/** code by webdevtrick ( https://webdevtrick.com ) **/
-.main h1 {
-  font-size: 42px;
-  color: #333;
-  font-weight: 700;
-}
-
-.main p {
-  font-size: 18px;
-  color: #687074;
-  width: 70%;
-  margin: 15px auto;
-}
-
-.main p a {
-  text-decoration: none;
-  color: #ec1c23;
-  font-weight: 900;
-}
-
-.main ul {
-  margin-top: 50px;
-}
-
-.main ul li {
-  padding: 10px 15px;
-  border: 2px solid #333;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all .5s ease;
-  color: #333;
-}
-
-.main ul li.active,
-.main ul li:hover {
-  background-color: #ec1c23;
-  color: #FFF;
-  border: 2px solid #ec1c23;
-}
-
-.main ul li:last-of-type {
-  margin-right: 0;
-}
-
-.main ul li:nth-of-type(3),
-.main ul li:nth-of-type(4),
-.main ul li:nth-of-type(5) {
-  flex-grow: 2;
-}
-
-.main .container-fluid {
-  overflow: hidden;
-  padding: 0;
-}
-
-.main .container-fluid .col-md-3 {
-  padding: 0;
-  float: left;
-  transition: all 5s ease-in-out;
-}
-
-.main .container-fluid img {
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .main .container-fluid img {
-    margin-bottom: 15px;
   }
 }

@@ -1,59 +1,56 @@
-#gallery {
+/** code by webdevtrick ( https://webdevtrick.com ) **/
+.gallery {
 
-  .portfolioFilter {
-    padding: 15px 0;
-  }
-
-  .portfolioFilter a {
-    margin-right: 6px;
-    color: #666;
-    text-decoration: none;
-    border: 1px solid #ccc;
-    padding: 4px 15px;
-    border-radius: 50px;
-    display: inline-block;
+  .ul{
+    margin-top: 50px;
   }
 
-  .portfolioFilter a.current {
-    background: #1e1e1e;
-    border: 1px solid #1e1e1e;
-    color: #f9f9f9;
-  }
-  .portfolioContainer{
-    border: 1px solid #eee;
-    border-radius: 3px;
-  }
-  img {
-    margin: 5px;
-    max-width:100%;
+  .ul li{
+    padding: 10px 15px;
+    border: 2px solid #333;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .5s ease;
+  color: #333;
   }
 
-  .isotope-item {
-    z-index: 2;
+  .ul li.active,
+  .ul li:hover{
+    background-color: #ec1c23;
+    color: #FFF;
+    border: 2px solid #ec1c23;
   }
 
-  .isotope-hidden.isotope-item {
-    pointer-events: none;
-    z-index: 1;
+  .ul li:last-of-type{
+    margin-right: 0 ;
   }
 
-  .isotope,
-  .isotope .isotope-item {
-    /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+  .ul li:nth-of-type(3),
+  .ul li:nth-of-type(4),
+  .ul li:nth-of-type(5){
+    flex-grow: 2
   }
 
-  .isotope {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    transition-property: height, width;
+  .container-fluid{
+  overflow: hidden;
+  padding: 0;
   }
 
-  .isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    transition-property: transform, opacity;
+  .container-fluid .col-md-3{
+    padding: 0;
+    float: left;
+    transition: all 5s ease-in-out
+  }
+
+  .container-fluid img{
+    width: 100%
+  }
+}
+
+@media (max-width: 767px){
+  .gallery .container-fluid img{
+      margin-bottom: 15px
   }
 }
