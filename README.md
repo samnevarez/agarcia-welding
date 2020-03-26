@@ -1,3 +1,1 @@
-Clone Repo
-npm install
-npm start
+Clone Repo, npm install, npm start
