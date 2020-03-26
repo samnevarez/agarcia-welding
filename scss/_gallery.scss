@@ -1,56 +1,89 @@
 /** code by webdevtrick ( https://webdevtrick.com ) **/
 .gallery {
 
-  .ul{
-    margin-top: 50px;
+  .ul, .row{
+    color: #fff;
+    list-style: none;
+    background-color: $primary-dark-400;
   }
 
-  .ul li{
-    padding: 10px 15px;
-    border: 2px solid #333;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    cursor: pointer;
+  .col-md {
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+  }
+
+  .active {
+    background: $primary;
+    color: #fff;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  ul li {
+
     transition: all .5s ease;
-  color: #333;
+    color: #fff;
+    padding: 4px 0;
   }
 
-  .ul li.active,
-  .ul li:hover{
-    background-color: #ec1c23;
-    color: #FFF;
-    border: 2px solid #ec1c23;
-  }
-
-  .ul li:last-of-type{
-    margin-right: 0 ;
-  }
-
-  .ul li:nth-of-type(3),
+  .ul li:nth-of-type(3), 
   .ul li:nth-of-type(4),
   .ul li:nth-of-type(5){
     flex-grow: 2
   }
 
-  .container-fluid{
-  overflow: hidden;
-  padding: 0;
-  }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    flex-direction: row;
+    grid-gap: 0;
+    width: 100%;
+    height: auto;
+    
+    img {
+      display: block;
+      transition: transform 0.5s ease 0s;
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
 
-  .container-fluid .col-md-3{
-    padding: 0;
-    float: left;
-    transition: all 5s ease-in-out
-  }
-
-  .container-fluid img{
-    width: 100%
+      &:hover {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+        overflow: hidden !important;
+      }
+    }
+    .images {
+      overflow: hidden;
+    }
   }
 }
 
-@media (max-width: 767px){
-  .gallery .container-fluid img{
-      margin-bottom: 15px
+@media (max-width: 1027px){
+  .gallery {
+      .gallery-container {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+
+@media (max-width: 767px) {
+.gallery {
+    .gallery-container {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
+
+@media (max-width: 540px) {
+  .gallery {
+      .gallery-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  }

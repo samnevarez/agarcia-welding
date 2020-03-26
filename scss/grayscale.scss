@@ -11,12 +11,12 @@
 @import 'gallery.scss';
 @import 'el-castillo-design-system.scss';
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   border: solid red .25px;
   box-sizing: border-box;
-}
+} */
 
 body {
   background-color: $primary-dark-200;
@@ -131,7 +131,7 @@ body {
 }
 
 footer {
-  padding: 3rem 0;
+  margin: 3rem 0;
 }
 
 .img-fluid {
@@ -176,5 +176,16 @@ footer {
 @media (max-width: 992px) {
   .rotate-180-deg{
     transform: rotate(0deg);
+  }
+}
+
+select {
+  height: 38px;
+}
+
+.footer-img {
+  overflow: hidden;
+  img {
+    width: 100%;
   }
 }

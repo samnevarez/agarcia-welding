@@ -10,10 +10,15 @@
 
   <title>A.Garcia Welding | Serving Inland Empire</title>
 
+  <!-- Lity -->
+  <link href="dist/lity.css" rel="stylesheet">
+  <script src="vendor/jquery.js"></script>
+  <script src="dist/lity.js"></script>
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- jquery CDN -->
+  <!-- jQuery CDN -->
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
   <!-- Custom fonts for this template -->
@@ -31,7 +36,7 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-uppercase" id="mainNav">
     <div class="container">
@@ -77,7 +82,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-4 col-lg-4">
-            <img class="img-fluid ecmb-m-6" src="img/about.jpg" alt="">
+            <img class="img-fluid ecmb-m-6" src="img/about.png" alt="">
         </div>
         <div class="col-lg-8 mx-auto">
           <h2 class="ecmb-8 ecmy-m-8">About A.Garcia Welding</h2>
@@ -101,39 +106,39 @@
         <h2 class="ecmy-8">Our Gallery</h2>
         <section class="gallery text-center">
           <div class="container">
-            <ul class="list-unstyled row">
+            <ul class="row">
               <li class="col-md active" data-class="all">ALL</li>
-              <li class="col-md" data-class="design">WEB DESIGN</li>
-              <li class="col-md" data-class="development">WEB DEVELOPMENT</li>
-              <li class="col-md" data-class="graphic">GRAPHIC DESIGN</li>
-              <li class="col-md" data-class="seo">SEARCH ENGINE</li>
-              <li class="col-md" data-class="ui">UI / UX</li>
+              <li class="col-md" data-class="gates">Gates</li>
+              <li class="col-md" data-class="fences">Fences</li>
+              <li class="col-md" data-class="furnture">Furnture</li>
+              <li class="col-md" data-class="rails">Rails</li>
+              <li class="col-md" data-class="other">Other</li>
             </ul>
           </div>
-          <div class="container-fluid ">
-            <div class="col-md-3 images" data-class="ui">
-              <img src="https://picsum.photos/300/200?random=1" alt="">
+          <div class="gallery-container">
+            <div class="images" data-lity data-lity-target="img/gallery/gate-1.png" data-class="gates">
+              <img src="img/gallery/gate-1.png" alt="">
             </div>
-            <div class="col-md-3 images" data-class="development">
-              <img src="https://picsum.photos/300/200?random=2" alt="">
+            <div class="images" data-lity data-lity-target="img/gallery/gate-2.png" data-class="gates">
+              <img src="img/gallery/gate-2.png" alt="">
             </div>
-            <div class="col-md-3 images" data-class="ui">
-              <img src="https://picsum.photos/300/200?random=3" alt="">
+            <div class="images" data-lity data-lity-target="img/gallery/fence-1.png" data-class="fences">
+              <img src="img/gallery/fence-1.png" alt="">
             </div>
-            <div class="col-md-3 images" data-class="design">
-              <img src="https://picsum.photos/300/200?random=4" alt="">
+            <div class="images" data-lity data-lity-target="img/gallery/furnture-1.png" data-class="furnture">
+              <img src="img/gallery/furnture-1.png" alt="">
             </div>
-            <div class="col-md-3 images" data-class="development">
-              <img src="https://picsum.photos/300/200?random=5" alt="">
+            <div class="images" data-lity data-lity-target="img/gallery/rail-1.png" data-class="rails">
+              <img src="img/gallery/rail-1.png" alt="">
             </div>
-            <div class="col-md-3 images" data-class="design">
-              <img src="https://picsum.photos/300/200?random=6" alt="">
+            <div class="images" data-lity data-lity-target="img/gallery/rail-2.png" data-class="rails">
+              <img src="img/gallery/rail-2.png" alt="">
             </div>
-            <div class="col-md-3 images" data-class="graphic">
-              <img src="https://picsum.photos/300/200?random=7" alt="">
+            <div class="images" data-lity data-lity-target="img/gallery/other-1.png" data-class="other">
+              <img src="img/gallery/other-1.png" alt="">
             </div>
-            <div class="col-md-3 images" data-class="seo">
-              <img src="https://picsum.photos/300/200?random=8" alt="">
+            <div class="images" data-lity data-lity-target="img/gallery/other-2.png" data-class="other">
+              <img src="img/gallery/other-2.png" alt="">
             </div>
           </div>
         </section>
@@ -144,7 +149,7 @@
 
 <script>
 const listItems = document.querySelectorAll('.gallery li');
-const allimages = document.querySelectorAll('.gallery .container-fluid .images');
+const allimages = document.querySelectorAll('.gallery .gallery-container .images');
 
 
 function toggleActiveClass(active){
@@ -180,141 +185,41 @@ for(let i = 0; i < listItems.length; i++){
       <!-- Project One Row -->
        <div class="ecmy-8 row justify-content-center no-gutters">
         <div class="col-lg-6 flex-center bg-black">
-          <img class="img-fluid" src="img/sn-bg-large-0.png" alt="">
+          <img class="img-fluid" src="img/services.png" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-lg-left">
-                <h3 class="ecmb-6">BearBellX App</h3>
-                <p class="ecmy-6">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <button type="submit" class="ecmt-4 btn-prm-bg btn btn-primary btn-project">Read More</button>
+                <h3 class="ecmb-6">Have a question?</h3>
+                <p class="ecmy-6">Reach out to us and we'll provide you with a free estimate</p>
+                <a class="nav-link js-scroll-trigger active p-0" href="#contact"><button type="submit" class="ecmt-4 btn-prm-bg btn btn-primary btn-project">Read More</button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Project Two Row -->
-      <div class="ecmy-8 row justify-content-center no-gutters">
-        <div class="col-lg-6 flex-center bg-black">
-          <img class="img-fluid" src="img/sn-bg-large-0.png" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-lg-left">
-                <h3 class="ecmb-6">Bank Widget</h3>
-                <p class="ecmy-6">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <button type="submit" class="ecmt-4 btn-prm-bg btn btn-primary btn-project">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project three Row -->
-      <div class="ecmy-8 row justify-content-center no-gutters">
-        <div class="col-lg-6 flex-center bg-black">
-          <img class="img-fluid" src="img/sn-bg-large-0.png" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-lg-left">
-                <h3 class="ecmb-6">Page Layout Editor - Features</h3>
-                <p class="ecmy-6">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                <button type="submit" class="ecmt-4 btn-prm-bg btn btn-primary btn-project">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project four Row -->
-      <div class="ecmy-8 row justify-content-center no-gutters">
-        <div class="col-lg-6 flex-center bg-black">
-          <img class="img-fluid" src="img/sn-bg-large-0.png" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-lg-left">
-                <h3 class="ecmb-6">AUDIT - Information Architecture</h3>
-                <p class="ecmy-6">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <button type="submit" class="ecmt-4 btn-prm-bg btn btn-primary btn-project">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project five Row -->
-      <div class="ecmy-8 row justify-content-center no-gutters">
-          <div class="col-lg-6 flex-center bg-black">
-            <img class="img-fluid" src="img/sn-bg-large-0.png" alt="">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-lg-left">
-                  <h3 class="ecmb-6">A/B Testing</h3>
-                  <p class="ecmy-6">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                  <button type="submit" class="ecmt-4 btn-prm-bg btn btn-primary btn-project">Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project six Row -->
-        <div class="ecmy-8 row justify-content-center no-gutters">
-            <div class="col-lg-6 flex-center bg-black">
-              <img class="img-fluid" src="img/sn-bg-large-0.png" alt="">
-            </div>
-            <div class="col-lg-6 order-lg-first">
-              <div class="bg-black h-100 project">
-                <div class="d-flex h-100">
-                  <div class="project-text w-100 my-auto text-lg-left">
-                    <h3 class="ecmb-6">Form Optimization</h3>
-                    <p class="ecmy-6">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                    <button type="submit" class="ecmt-4 btn-prm-bg btn btn-primary btn-project">Read More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
     </div>
 
   <!-- Contact Section -->
-  <section id="contact" class="ecmy-16 contact-section">
+  <section class="ecmy-0 contact-section">
     <div class="container">
 
       <div class="row">
 
-        <div class="col-md-4 ecmb-m-6">
-          <div class="card py-4 h-100 bg-black">
-            <div class="card-body text-center">
-              <div class="ecmb-2"><img src="img/ec-linkedin.svg" /></div>
-              <h4 class="ecmb-6 text-uppercase">Linkedin</h4>
-              <div class=""><a target="_blank" href="https://www.linkedin.com/in/sammuelnevarez/">Connect</a></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 ecmb-m-6">
+        <div class="col-md-6 ecmb-m-6">
           <div class="card py-4 h-100 bg-black">
             <div class="card-body text-center">
               <div class="ecmb-2"><img src="img/ec-email.svg" /></div>
               <h4 class="ecmb-6 text-uppercase">Email</h4>
               <div class="">
-                <a href="mailto: snevarez89@gmail.com">snevarez89@gmail.com</a>
+                <a href="mailto: snevarez89@gmail.com">agarciawelding.com</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 ecmb-m-6">
+        <div class="col-md-6 ecmb-m-6">
           <div class="card py-4 h-100 bg-black">
             <div class="card-body text-center">
               <div class="ecmb-2"><img src="img/ec-phone.svg" /></div>
@@ -327,8 +232,165 @@ for(let i = 0; i < listItems.length; i++){
         </div>
       </div>
     </div>
+    
+  <section class="ecmy-16 projects-section bg-black footer-img">
+    <div class="container">
 
-    <div class="social d-flex justify-content-center">
+      <div class="row">
+        <div class="col-lg-6 flex-center">
+          <img class="img-fluid" src="img/footer.png" alt="">
+        </div>
+        <div class="col-lg-6 ecmb-m-6">
+          <h2 class="ecmy-8">Contact Us</h2>
+
+          <!-- Default form contact -->
+          <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbybkocn3zKQZxyTYzFWQC2DwUQDLHaxmWaaACZ5dQ/exec">
+
+          <!-- Name -->
+          <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+          <!-- Email -->
+          <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+          <label class="text-white-75" for="services-list">Choose a Service</label>
+
+          <select class="col-lg-12 ecmb-6" name="service" id="services-list">
+            <option value="">Services</option>
+            <option value="gates">Gates</option>
+            <option value="fences">Fences</option>
+            <option value="railes">Railes</option>
+            <option value="furniture">Furniture</option>
+            <option value="repairs">Repairs</option>
+            <option value="audi">Other</option>
+          </select>
+
+          <!-- Message -->
+          <div class="form-group">
+          <textarea class="form-control rounded-0" name="message" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+          </div>
+
+          <!-- Send button -->
+          <button class="btn btn-primary btn-prm-bg ecmb-8" type="submit">Send</button>
+
+          </form>
+
+          <script>
+            (function() {
+              // get all data in form and return object
+              function getFormData(form) {
+                var elements = form.elements;
+                var honeypot;
+
+                var fields = Object.keys(elements).filter(function(k) {
+                  if (elements[k].name === "honeypot") {
+                    honeypot = elements[k].value;
+                    return false;
+                  }
+                  return true;
+                }).map(function(k) {
+                  if(elements[k].name !== undefined) {
+                    return elements[k].name;
+                  // special case for Edge's html collection
+                  }else if(elements[k].length > 0){
+                    return elements[k].item(0).name;
+                  }
+                }).filter(function(item, pos, self) {
+                  return self.indexOf(item) == pos && item;
+                });
+
+                var formData = {};
+                fields.forEach(function(name){
+                  var element = elements[name];
+                  
+                  // singular form elements just have one value
+                  formData[name] = element.value;
+
+                  // when our element has multiple items, get their values
+                  if (element.length) {
+                    var data = [];
+                    for (var i = 0; i < element.length; i++) {
+                      var item = element.item(i);
+                      if (item.checked || item.selected) {
+                        data.push(item.value);
+                      }
+                    }
+                    formData[name] = data.join(', ');
+                  }
+                });
+
+                // add form-specific values into the data
+                formData.formDataNameOrder = JSON.stringify(fields);
+                formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+                formData.formGoogleSendEmail
+                  = form.dataset.email || ""; // no email by default
+
+                return {data: formData, honeypot: honeypot};
+              }
+
+              function handleFormSubmit(event) {  // handles form submit without any jquery
+                event.preventDefault();           // we are submitting via xhr below
+                var form = event.target;
+                var formData = getFormData(form);
+                var data = formData.data;
+
+                // If a honeypot field is filled, assume it was done so by a spam bot.
+                if (formData.honeypot) {
+                  return false;
+                }
+
+                disableAllButtons(form);
+                var url = form.action;
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', url);
+                // xhr.withCredentials = true;
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                      form.reset();
+                      var formElements = form.querySelector(".form-elements")
+                      if (formElements) {
+                        formElements.style.display = "none"; // hide form
+                      }
+                      var thankYouMessage = form.querySelector(".thankyou_message");
+                      if (thankYouMessage) {
+                        thankYouMessage.style.display = "block";
+                      }
+                    }
+                };
+                // url encode form data for sending as post data
+                var encoded = Object.keys(data).map(function(k) {
+                    return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                }).join('&');
+                xhr.send(encoded);
+              }
+              
+              function loaded() {
+                // bind to the submit event of our form
+                var forms = document.querySelectorAll("form.gform");
+                for (var i = 0; i < forms.length; i++) {
+                  forms[i].addEventListener("submit", handleFormSubmit, false);
+                }
+              };
+              document.addEventListener("DOMContentLoaded", loaded, false);
+
+              function disableAllButtons(form) {
+                var buttons = form.querySelectorAll("button");
+                for (var i = 0; i < buttons.length; i++) {
+                  buttons[i].disabled = true;
+                }
+              }
+            })();
+          </script>
+
+          <!-- Default form contact -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="social d-flex justify-content-center">
         <a href="#" class="mx-2">
           <i class="fab fa-twitter"></i>
         </a>
@@ -339,15 +401,16 @@ for(let i = 0; i < listItems.length; i++){
           <i class="fab fa-github"></i>
         </a>
       </div>
-
   </section>
 
   <!-- Footer -->
+  <div class="container">
   <footer class="text-center">
-    <div class="container text-white-75">
-      Copyright &copy; samnevarez.com 2019
+    <div class="text-white-75">
+      Copyright &copy; agarciawelding.com 2020
     </div>
   </footer>
+  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
