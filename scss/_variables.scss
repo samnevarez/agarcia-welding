@@ -1,24 +1,24 @@
 // colors
 
 $white: #fff !default;
-$black: #111 !default;
-$primary: #52549c !default;
+$black: #444 !default;
+$primary: #b68233 !default;
 $secondary: lighten($primary, 25%) !default;
 
 // buttons
 
 $btn-prm: #ad7600 !default;
-$btn-scn: #52549c !default;
+$btn-scn: #d49941 !default;
 
-$gray-100: lighten(#111, 90%) !default;
-$gray-200: lighten(#111, 80%) !default;
-$gray-300: lighten(#111, 70%) !default;
-$gray-400: lighten(#111, 60%) !default;
-$gray-500: lighten(#111, 50%) !default;
-$gray-600: lighten(#111, 40%) !default;
-$gray-700: lighten(#111, 30%) !default;
-$gray-800: lighten(#111, 20%) !default;
-$gray-900: lighten(#111, 10%) !default;
+$gray-100: lighten(#444, 90%) !default;
+$gray-200: lighten(#444, 80%) !default;
+$gray-300: lighten(#444, 70%) !default;
+$gray-400: lighten(#444, 60%) !default;
+$gray-500: lighten(#444, 50%) !default;
+$gray-600: lighten(#444, 40%) !default;
+$gray-700: lighten(#444, 30%) !default;
+$gray-800: lighten(#444, 20%) !default;
+$gray-900: lighten(#444, 10%) !default;
 
 $primary-dark-100: darken($primary, 50%) !default;
 $primary-dark-200: darken($primary, 45%) !default;
