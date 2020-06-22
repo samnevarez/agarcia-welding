@@ -7,9 +7,9 @@
 /* mobile style */
 #mainNav {
   min-height: 56px;
-  background-color: #171006;
+  background-color: black;
   border-radius: 0;
-  border-bottom: 1px solid #66491d;
+  border-bottom: 1px solid #48340f;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -23,7 +23,7 @@
 
 #mainNav .navbar-toggler {
   padding: 0;
-  color: #debd8a;
+  color: #ddb15f;
   border: none;
   border-radius: 0;
 }
@@ -33,7 +33,7 @@
 }
 
 #mainNav .navbar-toggler:focus:hover {
-  color: #debd8a;
+  color: #ddb15f;
   border: none;
 }
 
@@ -50,11 +50,11 @@
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #debd8a;
+  color: #ddb15f;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #debd8a;
+  color: #ddb15f;
 }
 
 .masthead {
@@ -141,12 +141,12 @@
 }
 
 a {
-  color: #debd8a;
+  color: #ddb15f;
   text-decoration: none;
 }
 
 a:hover {
-  color: #f5eada;
+  color: #efdab3;
   text-decoration: underline;
 }
 
@@ -165,7 +165,7 @@ a:hover {
 @media (min-width: 320px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #523b17;
+    border-left: 0.5rem solid #33250b;
   }
 }
 
@@ -179,7 +179,7 @@ a:hover {
     padding: 2rem;
   }
   .projects-section .project-text hr {
-    border-color: #b68233;
+    border-color: #9c7121;
     border-width: .25rem;
     width: 30%;
   }
@@ -187,7 +187,7 @@ a:hover {
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #b68233;
+  border-bottom: 0.25rem solid #9c7121;
 }
 
 .contact-section .card h4 {
@@ -198,7 +198,7 @@ a:hover {
 }
 
 .contact-section .card hr {
-  border-color: #b68233;
+  border-color: #9c7121;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -3157,16 +3157,16 @@ a:hover {
 .gallery .ul, .gallery .row {
   color: #fff;
   list-style: none;
-  background-color: #2b1e0c;
+  background-color: #090602;
 }
 
 .gallery .col-md:hover {
-  background: #b68233;
+  background: #9c7121;
   color: #fff;
 }
 
 .gallery .active {
-  background: #b68233;
+  background: #9c7121;
   color: #fff;
 }
 
@@ -5628,7 +5628,7 @@ a:hover {
   box-sizing: border-box;
 } */
 body {
-  background-color: #030201;
+  background-color: black;
 }
 
 body p {
@@ -5719,8 +5719,8 @@ h1 {
     height: 56px;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #030201;
-    border-bottom: 1px solid #66491d;
+    background-color: black;
+    border-bottom: 1px solid #48340f;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4) !important;
   }
@@ -5729,7 +5729,7 @@ h1 {
     color: #cccccc;
   }
   #mainNav .navbar-brand:hover {
-    color: #debd8a;
+    color: #ddb15f;
   }
   #mainNav .nav-link {
     transition: none;
@@ -5739,19 +5739,19 @@ h1 {
     transition: .5s;
   }
   #mainNav .nav-link:hover {
-    color: #debd8a;
+    color: #ddb15f;
   }
   #mainNav .nav-link:active {
-    color: #debd8a;
+    color: #ddb15f;
   }
   #mainNav.navbar-shrink {
-    background-color: #171006;
+    background-color: black;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #cccccc;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #debd8a;
+    color: #ddb15f;
   }
   #mainNav.navbar-shrink .nav-link {
     color: #cccccc;
@@ -5759,20 +5759,20 @@ h1 {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #debd8a;
+    color: #ddb15f;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #debd8a;
+    color: #ddb15f;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #debd8a;
+    color: #ddb15f;
     outline: none;
-    border-bottom: 0.25rem solid #debd8a;
+    border-bottom: 0.25rem solid #ddb15f;
   }
 }
 
 .bg-black {
-  background-color: #171006 !important;
+  background-color: black !important;
 }
 
 .bg-dark {
@@ -5780,11 +5780,11 @@ h1 {
 }
 
 .bg-primary {
-  background-color: #b68233 !important;
+  background-color: #9c7121 !important;
 }
 
 .text-primary {
-  color: #b68233 !important;
+  color: #9c7121 !important;
 }
 
 footer {
@@ -5797,7 +5797,7 @@ footer {
 }
 
 .ecborder {
-  border: 1px solid #523b17;
+  border: 1px solid #33250b;
 }
 
 @media (max-width: 992px) {
@@ -5814,12 +5814,12 @@ footer {
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #523b17;
+  border-bottom: 0.25rem solid #33250b;
 }
 
 .contact-section .card hr {
   border: 0;
-  border-bottom: 0.25rem solid #523b17;
+  border-bottom: 0.25rem solid #33250b;
 }
 
 .rotate-90-deg {
